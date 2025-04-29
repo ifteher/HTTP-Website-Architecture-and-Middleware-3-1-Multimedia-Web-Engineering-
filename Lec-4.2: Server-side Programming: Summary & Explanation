@@ -1,0 +1,72 @@
+🔸 Server-side Programming: Summary & Explanation
+📌 Uses (ব্যবহারসমূহ)
+Server-side প্রোগ্রামিং মূলত সার্ভারে চলে এবং বিভিন্ন গুরুত্বপূর্ণ কাজ সম্পাদন করে, যেমন:
+
+Process user input
+➤ ব্যবহারকারীর ইনপুট (যেমন ফর্ম ডেটা) যাচাই ও প্রক্রিয়াকরণ করা।
+
+Compiles pages
+➤ ডায়নামিক কনটেন্ট তৈরি করে এবং HTML পৃষ্ঠাগুলো সার্ভার থেকে তৈরি হয়।
+
+Structure web applications
+➤ ওয়েব অ্যাপ্লিকেশনের লজিক্যাল গঠন নির্ধারণ করে।
+
+Interact with permanent storage (SQL, files)
+➤ ডেটাবেজ (SQL) বা ফাইল সিস্টেমের সাথে যোগাযোগ করে ডেটা সংরক্ষণ/আহরণ করে।
+
+📌 Example Languages (উদাহরণস্বরূপ ভাষাসমূহ)
+PHP
+
+Python
+
+ASP.Net (C#, C++, অথবা Visual Basic দিয়ে)
+
+C++, C#, Java
+➤ যদিও এই ভাষাগুলো মূলত ওয়েবের জন্য তৈরি নয়, তবুও এখন অ্যাপ্লিকেশন-লেভেল ওয়েব সার্ভিসে ব্যবহার হয়।
+
+🔹 সারমর্ম (Summary in Bengali):
+Server-side programming এমন এক প্রক্রিয়া যেখানে ব্যবহারকারীর অনুরোধ অনুযায়ী সার্ভার ডেটা প্রক্রিয়া করে, পৃষ্ঠা তৈরি করে এবং ডেটাবেজের সাথে কাজ করে। এ ধরনের কাজের জন্য PHP, Python, ASP.Net, Java ইত্যাদি ভাষা ব্যবহার করা হয়।
+#####
+This image illustrates a Multi-Tier E-commerce Architecture, a common design pattern for building robust and scalable online systems. It breaks down the system into three distinct layers, each with specific responsibilities:
+
+Summary:
+
+The image depicts how an e-commerce system is organized into three interconnected layers:
+
+Web Server Layer: Handles incoming user requests from the internet.
+Middle-tier Layer: Processes user requests, manages business logic, and interacts with data.
+Backend Layer: Stores and manages the core data and corporate systems.
+This separation of concerns allows for better organization, scalability, security, and maintainability of the e-commerce platform.
+
+Explanation of Each Layer:
+
+Web Server Layer:
+
+This is the entry point for users accessing the e-commerce website via the internet.
+It receives incoming internet requests, as indicated by the arrow and "Incoming Internet requests T1 Line 1.544 Mbps". The T1 line speed is mentioned to give a sense of the network capacity, though it's less relevant to the architectural concept itself.
+The primary component of this layer is the Web Servers. These servers are responsible for responding to user requests by serving web pages (HTML, CSS, JavaScript, images, etc.) to the user's browser. They act as the interface between the user and the underlying application.
+Middle-tier Layer:
+
+This layer sits between the web servers and the backend systems. It's the "brain" of the application, handling the business logic and data processing.
+It typically includes various types of servers, such as:
+E-commerce Servers: Handle specific e-commerce functionalities like shopping carts, order processing, and product catalogs.
+Application Servers: Execute the core business logic of the application.
+Database Servers: Manage the storage and retrieval of application data (e.g., product information, customer details, order history).
+Ad Servers: Manage and serve advertisements on the website.
+Mail Servers: Handle email communication related to the e-commerce platform (e.g., order confirmations, shipping notifications).
+The middle-tier takes requests from the web servers, performs necessary processing (like accessing product information from the database, calculating prices, etc.), and then communicates with the backend layer if needed before sending a response back to the web server.
+Backend Layer:
+
+This is the data storage and management layer. It houses the critical data and integrates with existing corporate systems.
+It includes:
+Corporate applications: These are the organization's core business systems.
+Specific examples mentioned are:
+Finance: Manages financial data and processes.
+Production MRP (Material Requirements Planning): Handles production planning and inventory management.
+Enterprise systems: Broad systems that integrate various business processes (e.g., ERP - Enterprise Resource Planning).
+HR systems: Manage human resources data and processes.
+The backend layer ensures data persistence, integrity, and security. The middle-tier interacts with this layer to retrieve and update information needed to fulfill user requests.
+In essence, the multi-tier architecture promotes modularity, making the system easier to develop, deploy, scale, and maintain. Changes in one layer are less likely to impact other layers, improving overall system stability and flexibility. The accompanying text further emphasizes that the web server links to the middle-tier (application servers) and then to the backend (corporate systems).
+ওয়েব সার্ভার স্তর: এটা ব্যবহারকারীদের কাছ থেকে আসা ইন্টারনেটের অনুরোধগুলো গ্রহণ করে।
+মিডল-টিয়ার স্তর: এটা সেই অনুরোধগুলো নিয়ে কাজ করে, ব্যবসার নিয়মকানুন পালন করে এবং ডেটা নিয়ে ঘাঁটাঘাঁটি করে।
+ব্যাকএন্ড স্তর: এখানে মূল ডেটা এবং কোম্পানির অন্যান্য জরুরি সিস্টেমগুলো জমা থাকে ও সেগুলো ম্যানেজ করা হয়।
